@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { initAnalytics } from './lib/analytics'
 import { useUTMStore } from './store/utmStore'
 import { StartScreen } from './screens/StartScreen'
@@ -32,7 +32,7 @@ function App() {
   }, [initializeUTM])
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Navigate to="/start" replace />} />
         <Route path="/start" element={<StartScreen />} />
@@ -52,7 +52,7 @@ function App() {
         <Route path="/thanks" element={<ThanksScreen />} />
         <Route path="/error" element={<ErrorScreen />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 

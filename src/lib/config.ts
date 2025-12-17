@@ -26,10 +26,20 @@ export function getCurrentURL(): string {
 
 /**
  * Get the current pathname
+ * Works with both BrowserRouter and HashRouter
+ * With HashRouter, extracts path from hash (e.g., "#/start" -> "/start")
  * Useful for analytics or logging
  */
 export function getCurrentPathname(): string {
   if (typeof window === 'undefined') return ''
+  
+  // Check if using hash routing (HashRouter)
+  if (window.location.hash && window.location.hash.startsWith('#/')) {
+    // Extract path from hash (remove the #)
+    return window.location.hash.substring(1)
+  }
+  
+  // Default to pathname (BrowserRouter)
   return window.location.pathname
 }
 
