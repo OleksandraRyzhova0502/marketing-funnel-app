@@ -70,7 +70,7 @@ The app will be available at the URL shown in your terminal (typically `http://l
 npm run build
 ```
 
-The production build will be in the `build` directory.
+The production build will be in the `docs` directory.
 
 ### Preview Production Build
 
