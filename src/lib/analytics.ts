@@ -1,5 +1,6 @@
 import { getCurrentPathname, getCurrentURL } from './config'
 import { getAllMarketingParams } from './utm'
+import { v4 as uuidv4 } from "uuid";
 
 // Amplitude types
 declare global {
@@ -26,7 +27,7 @@ function getSessionId(): string {
     if (stored) {
       sessionId = stored
     } else {
-      sessionId = crypto.randomUUID()
+      sessionId = uuidv4()
       sessionStorage.setItem('funnel_session_id', sessionId)
     }
   }
