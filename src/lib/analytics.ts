@@ -1,4 +1,3 @@
-import { useUTMStore } from '../store/utmStore'
 import { getCurrentPathname, getCurrentURL } from './config'
 import { getAllMarketingParams } from './utm'
 

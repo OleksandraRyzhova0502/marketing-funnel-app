@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { initializeUTMParams, getUTMParams, getAllMarketingParams } from '../lib/utm'
+import { initializeUTMParams, getAllMarketingParams } from '../lib/utm'
 
 /**
  * Marketing Parameters Store
@@ -26,7 +26,7 @@ interface UTMState {
   getAll: () => Record<string, string | undefined>
 }
 
-export const useUTMStore = create<UTMState>((set, get) => ({
+export const useUTMStore = create<UTMState>((set) => ({
   utm_source: undefined,
   utm_medium: undefined,
   utm_campaign: undefined,
