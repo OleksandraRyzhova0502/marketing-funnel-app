@@ -1,4 +1,4 @@
-# Marketing Funnel App
+# Holylun
 
 A 16-screen marketing funnel web application built with React, TypeScript, and Vite. Features Amplitude analytics integration, responsive mobile-first design, and a complete user journey from quiz to purchase.
 
@@ -34,7 +34,7 @@ A 16-screen marketing funnel web application built with React, TypeScript, and V
 
 1. Clone or navigate to the project directory:
 ```bash
-cd marketing-funnel-app
+cd holylun
 ```
 
 2. Install dependencies:
@@ -157,7 +157,7 @@ VITE_AMPLITUDE_API_KEY=41d0ce55db9afc24cd09179c31ff9b41
 ## Project Structure
 
 ```
-marketing-funnel-app/
+holylun/
 ├── src/
 │   ├── components/          # Reusable UI components
 │   │   ├── ScreenLayout.tsx

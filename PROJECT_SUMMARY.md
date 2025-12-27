@@ -3,7 +3,7 @@
 ## File Tree
 
 ```
-marketing-funnel-app/
+holylun/
 ├── .env.example                    # Environment variables template
 ├── .gitignore                      # Git ignore rules
 ├── index.html                      # HTML entry point
