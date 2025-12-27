@@ -31,7 +31,7 @@ export const PriceStandartScreen: React.FC = () => {
   }
 
   const handlePay = () => {
-    track('clicked_pay_standart', { weeks: selectedWeeks })
+    track('Purchase', { weeks: selectedWeeks, currency: 'USD' })
     navigate('/thanks')
   }
 

@@ -22,7 +22,7 @@ export const PriceOfferScreen: React.FC = () => {
   }
 
   const handlePay = () => {
-    track('clicked_pay_offer')
+    track('clicked_pay_offer', { currency: 'USD' })
     navigate('/thanks')
   }
 

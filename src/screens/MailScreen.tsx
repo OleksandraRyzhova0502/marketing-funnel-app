@@ -36,7 +36,7 @@ export const MailScreen: React.FC = () => {
   const handleSubmit = () => {
     if (isValid) {
       setEmailStore(email)
-      track('clicked_mail_complete', { email })
+      track('Lead', { email })
       navigate('/price-standart')
     } else {
       setHasTriedSubmit(true)
