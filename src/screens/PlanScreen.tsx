@@ -31,7 +31,7 @@ export const PlanScreen: React.FC = () => {
         </h1>
         <ul className="plan-screen__list">
           <li>
-            <span className="plan-screen__number">11</span> poses selected for you;
+            <span className="plan-screen__number">18</span> poses selected for you;
           </li>
           <li>
             <span className="plan-screen__number">4</span> NLP methods;
