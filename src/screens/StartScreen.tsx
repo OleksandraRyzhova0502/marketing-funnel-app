@@ -18,7 +18,7 @@ export const StartScreen: React.FC = () => {
 
   const handleContinue = () => {
     track('clicked_continue')
-    navigate('/quiz0')
+    navigate('/quiz1')
   }
 
   return (
@@ -34,7 +34,10 @@ export const StartScreen: React.FC = () => {
           <div className="start-screen__topic">practical tips</div>
           <div className="start-screen__topic">seduction techniques</div>
         </div>
-        <PrimaryButton onClick={handleContinue}>CONTINUE &gt;&gt;</PrimaryButton>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px' }}>
+          <PrimaryButton onClick={handleContinue}>START A SHORT QUIZ</PrimaryButton>
+          <p className="start-screen__subtext">For best experience, we personalize the course to suit your preferences</p>
+        </div>
       </div>
     </ScreenLayout>
   )
