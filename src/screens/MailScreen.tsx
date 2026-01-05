@@ -47,8 +47,8 @@ export const MailScreen: React.FC = () => {
     <ScreenLayout>
       <div className="mail-screen">
         <h2 className="mail-screen__title">
-          Enter email<br />
-          <span className="mail-screen__highlight">to access</span> your plan:
+          Enter your email<br />
+          <span className="mail-screen__highlight">to receive the course</span>
         </h2>
         <input
           type="email"
