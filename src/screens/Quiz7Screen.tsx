@@ -36,13 +36,13 @@ export const Quiz7Screen: React.FC = () => {
     const formatted = formatAnswerText(answer)
     setAnswer('question_7', formatted)
     track('answear_question_7', { answer: formatted })
-    setTimeout(() => navigate('/loader'), 300)
+    setTimeout(() => navigate('/quiz8'), 300)
   }
 
   return (
     <ScreenLayout>
       <div className="quiz-screen quiz-screen--quiz7">
-        <ProgressBar progress={7 / 7} />
+        <ProgressBar progress={7 / 8} />
         <h2 className="quiz-screen__question">
           How do <span className="quiz-screen__highlight">you</span> and <span className="quiz-screen__highlight">your partner</span> feel about <span className="quiz-screen__highlight--pink">experiments</span>?
         </h2>
