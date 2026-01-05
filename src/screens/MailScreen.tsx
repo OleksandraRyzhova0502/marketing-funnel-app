@@ -58,7 +58,7 @@ export const MailScreen: React.FC = () => {
       // Store email in global state for use in authentication/signup flow
       setEmailStore(email)
       track('Lead', { email })
-      navigate('/price-standart')
+      navigate('/plan')
     } else {
       setHasTriedSubmit(true)
     }
@@ -68,8 +68,8 @@ export const MailScreen: React.FC = () => {
     <ScreenLayout>
       <div className="mail-screen">
         <h2 className="mail-screen__title">
-          Enter your email<br />
-          <span className="mail-screen__highlight">to receive the course</span>
+          <span className="mail-screen__highlight">Your plan is ready!</span><br />
+          <span className="mail-screen__subtitle">Enter email to receive the course</span>
         </h2>
         <input
           type="email"

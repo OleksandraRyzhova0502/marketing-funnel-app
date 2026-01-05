@@ -33,7 +33,7 @@ export const LoaderScreen: React.FC = () => {
         if (newProgress < 100) {
           animationFrameRef.current = requestAnimationFrame(updateProgress)
         } else {
-          navigate('/plan')
+          navigate('/mail')
         }
       }
     }

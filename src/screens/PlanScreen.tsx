@@ -18,7 +18,7 @@ export const PlanScreen: React.FC = () => {
 
   const handleNext = () => {
     track('clicked_next')
-    navigate('/mail')
+    navigate('/price-standart')
   }
 
   return (

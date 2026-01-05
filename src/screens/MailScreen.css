@@ -28,6 +28,15 @@
   font-weight: 700;
 }
 
+.mail-screen__title .mail-screen__highlight {
+  font-size: 45px;
+}
+
+.mail-screen__subtitle {
+  font-size: 20px;
+  font-weight: 400;
+}
+
 .mail-screen__input {
   width: 100%;
   max-width: 350px;
